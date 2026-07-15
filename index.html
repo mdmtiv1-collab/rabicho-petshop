@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rabicho Pet Shop Curitiba - O melhor em banho, tosa máquina/tesoura, clubinho de banhos, rações, medicamentos e acessórios para seu pet. Atendimento exclusivo e personalizado.">
+    <meta name="keywords" content="pet shop curitiba, banho e tosa atuba, rações curitiba, clubinho rabicho, medicamentos pet, acessórios pet, rabicho petshop">
+    <title>Rabicho Pet Shop - Atendimento Exclusivo e Carinho com seu Pet</title>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons for light weight clean vector icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20do%20Rabicho." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Fale conosco no WhatsApp"
+       id="btn-whatsapp-float">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.99L2 22l5.233-1.371a9.947 9.947 0 0 0 4.779 1.226h.005c5.505 0 9.989-4.478 9.99-9.985A9.97 9.97 0 0 0 12.012 2zm5.727 14.156c-.252.708-1.461 1.305-2.01 1.355-.494.045-1.134.072-3.235-.802-2.684-1.118-4.42-3.85-4.554-4.03-.133-.18-1.077-1.433-1.077-2.735 0-1.302.678-1.942.92-2.203.242-.261.53-.325.707-.325.176 0 .353.001.507.008.163.008.38-.03.593.483.218.528.747 1.823.81 1.956.064.133.107.288.017.469-.09.18-.135.289-.271.447-.136.157-.285.352-.407.472-.136.133-.277.278-.12.548.156.271.696 1.144 1.493 1.854.613.548 1.134.82 1.43.955.297.135.469.113.645-.09.176-.203.748-.871.95-1.171.2-.3.402-.252.676-.151.275.1.1.28.1.58.55v.281c.075.15.54 1.178 1.455.518c.252-.15.421-.355.673-.355.252 0 .421.105.421.105z"/>
+        </svg>
+    </a>
+
+    <!-- Header & Navbar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo-wrapper">
+                <img src="assets/logo.jpg" alt="Rabicho Pet Shop Logo" class="logo-img">
+                <div class="brand-name">
+                    Rabicho
+                    <span class="brand-sub">Pet Shop</span>
+                </div>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#" class="nav-link">Início</a></li>
+                    <li><a href="#about" class="nav-link">Nossa História</a></li>
+                    <li><a href="#services" class="nav-link">Serviços</a></li>
+                    <li><a href="#clubinho" class="nav-link">Clubinho</a></li>
+                    <li><a href="#products" class="nav-link">Produtos</a></li>
+                    <li><a href="#gallery" class="nav-link">Clientes</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content reveal active">
+                <div class="hero-badge">Bem-vindo ao Rabicho</div>
+                <h1 class="hero-title">O cuidado com amor que seu pet <span>sente na pele</span>.</h1>
+                <p>Oferecemos banho e tosa personalizados, clubinho de vantagens e produtos selecionados. Tudo em um espaço planejado 100% para o bem-estar e saúde do seu melhor amigo.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20banho%20ou%20tosa%20para%20meu%20pet." 
+                       class="btn btn-whatsapp" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       id="btn-hero-whatsapp">
+                        <i data-lucide="message-square"></i> Agendar Banho/Tosa
+                    </a>
+                    <a href="#services" class="btn btn-outline" id="btn-hero-services">
+                        Ver Serviços <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-container reveal active">
+                <div class="hero-image-wrapper">
+                    <!-- Showing one of the dog images as main cover -->
+                    <img src="assets/dogs/dog-2.jpeg" alt="Cãozinho feliz após banho no Rabicho Pet Shop">
+                </div>
+                <div class="hero-shape-1"></div>
+                <div class="hero-shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container about-grid">
+            <div class="about-images reveal">
+                <div class="about-img-box">
+                    <!-- Fachada image -->
+                    <img src="assets/fachada/fachada.jpeg" alt="Fachada do Rabicho Pet Shop" style="object-position: center;">
+                </div>
+                <div class="about-img-box">
+                    <!-- Another dog image -->
+                    <img src="assets/dogs/dog-4.jpeg" alt="Pet sendo atendido com carinho no Rabicho">
+                </div>
+                <div class="about-experience-badge">
+                    <span class="num">2021</span>
+                    <span class="txt">Desde</span>
+                </div>
+            </div>
+            
+            <div class="about-content reveal">
+                <h2 style="text-align: left;" class="section-title">Nossa História</h2>
+                <p>O Rabicho nasceu em 2021, logo após a pandemia, movido pelo amor incondicional e pelo sonho de dedicar a vida ao cuidado dos animais. No começo, nosso atendimento era feito em casa, em um espaço adaptado com muito carinho.</p>
+                <p>Graças à confiança de nossos clientes e ao crescimento boca a boca, a demanda aumentou de forma surpreendente. Isso nos impulsionou a dar um passo importante: migrar para um espaço profissional estruturado <strong>100% pensado no bem-estar físico e emocional dos pets</strong>.</p>
+                
+                <h3 style="margin-top: var(--spacing-sm); font-size: 1.3rem;">Nosso Diferencial</h3>
+                <p>No Rabicho, acreditamos que cada pet é único. Nossa equipe é altamente capacitada e preparada para lidar com os mais diversos perfis e temperamentos de animais. Cada detalhe do atendimento é personalizado, desde a escolha do shampoo adequado até a finalização estética específica para o tipo de pelagem.</p>
+
+                <div class="about-highlight-list">
+                    <div class="about-highlight-item">
+                        <i data-lucide="shield-check"></i>
+                        <span>Equipe Capacitada</span>
+                    </div>
+                    <div class="about-highlight-item">
+                        <i data-lucide="sparkles"></i>
+                        <span>Estética Exclusiva</span>
+                    </div>
+                    <div class="about-highlight-item">
+                        <i data-lucide="home"></i>
+                        <span>Espaço Aconchegante</span>
+                    </div>
+                    <div class="about-highlight-item">
+                        <i data-lucide="heart"></i>
+                        <span>Cuidado Humanizado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <h2 class="section-title">Serviços Exclusivos</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto var(--spacing-lg);">Oferecemos uma linha completa de tratamentos estéticos e de higiene, realizados com paciência, produtos premium e foco no relaxamento do seu pet.</p>
+            
+            <div class="services-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="banhos">Banhos</button>
+                <button class="filter-btn" data-filter="tosas">Tosas</button>
+                <button class="filter-btn" data-filter="estetica">Mimos & Estética</button>
+                <button class="filter-btn" data-filter="especiais">Especialidades</button>
+            </div>
+            
+            <div class="services-grid" id="services-grid">
+                <!-- Banho -->
+                <div class="service-card reveal" data-category="banhos">
+                    <div class="service-icon"><i data-lucide="bath"></i></div>
+                    <h3 class="service-name">Banho</h3>
+                    <p class="service-desc">Higienização completa da pele e pelagem, limpeza de ouvidos, corte de unhas e secagem profissional com produtos premium.</p>
+                    <div class="service-footer">
+                        <span class="service-tag banhos">Banhos</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Banho." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Banho e Tosa Máquina -->
+                <div class="service-card reveal" data-category="tosas">
+                    <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    <h3 class="service-name">Tosa na Máquina</h3>
+                    <p class="service-desc">Banho completo aliado à tosa corporal com máquina, ideal para manter a pelagem curta, uniforme e livre de nós.</p>
+                    <div class="service-footer">
+                        <span class="service-tag tosas">Tosas</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Tosa%20na%20M%C3%A1quina." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Banho e Tosa Tesoura -->
+                <div class="service-card reveal" data-category="tosas">
+                    <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    <h3 class="service-name">Tosa na Tesoura</h3>
+                    <p class="service-desc">Tosa artística e delicada realizada 100% à mão com tesouras especiais. Mantém o aspecto natural e volumoso da pelagem.</p>
+                    <div class="service-footer">
+                        <span class="service-tag tosas">Tosas</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Tosa%20na%20Tesoura." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Banho e Tosa Bebê -->
+                <div class="service-card reveal" data-category="tosas">
+                    <div class="service-icon"><i data-lucide="smile"></i></div>
+                    <h3 class="service-name">Tosa Bebê</h3>
+                    <p class="service-desc">Corte projetado para deixar o pet com aparência fofa e infantilizada, arredondando a pelagem e facilitando a manutenção diária.</p>
+                    <div class="service-footer">
+                        <span class="service-tag tosas">Tosas</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Tosa%20Beb%C3%AA." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Banho e Tosa Asiática -->
+                <div class="service-card reveal" data-category="tosas">
+                    <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                    <h3 class="service-name">Tosa Asiática</h3>
+                    <p class="service-desc">Estilo moderno e delicado que realça a fofura facial, focando no rostinho redondo e orelhas decoradas. Muito popular em raças pequenas.</p>
+                    <div class="service-footer">
+                        <span class="service-tag tosas">Tosas</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Tosa%20Asi%C3%A1tica." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Banho pelo longo -->
+                <div class="service-card reveal" data-category="banhos">
+                    <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                    <h3 class="service-name">Banho Pelo Longo</h3>
+                    <p class="service-desc">Tratamento específico para cães de pelagem longa, focando em hidratação pesada e técnicas de sopro que evitam a quebra dos fios.</p>
+                    <div class="service-footer">
+                        <span class="service-tag banhos">Banhos</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Banho%20Pelo%20Longo." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Banho medicamentoso -->
+                <div class="service-card reveal" data-category="banhos">
+                    <div class="service-icon"><i data-lucide="shield-alert"></i></div>
+                    <h3 class="service-name">Banho Medicamentoso</h3>
+                    <p class="service-desc">Banhos terapêuticos com shampoos dermatológicos receitados por veterinários para tratamento de alergias, fungos e inflamações de pele.</p>
+                    <div class="service-footer">
+                        <span class="service-tag banhos">Banhos</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Banho%20Medicamentoso." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Hand stripping -->
+                <div class="service-card reveal" data-category="especiais">
+                    <div class="service-icon"><i data-lucide="hand"></i></div>
+                    <h3 class="service-name">Hand Stripping</h3>
+                    <p class="service-desc">Técnica especializada para cães de pelo duro (como Terriers), onde os pelos mortos são retirados manualmente para manter a textura e cor originais da pelagem.</p>
+                    <div class="service-footer">
+                        <span class="service-tag especiais">Especiais</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Hand%20Stripping." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Trimming -->
+                <div class="service-card reveal" data-category="especiais">
+                    <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    <h3 class="service-name">Trimming</h3>
+                    <p class="service-desc">Ajuste e modelagem da pelagem respeitando o padrão da raça (ex: Golden Retriever, Cocker Spaniel), removendo excessos e valorizando a silhueta.</p>
+                    <div class="service-footer">
+                        <span class="service-tag especiais">Especiais</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Trimming." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Arredondamento de rostinho -->
+                <div class="service-card reveal" data-category="especiais">
+                    <div class="service-icon"><i data-lucide="smile"></i></div>
+                    <h3 class="service-name">Arredondamento de Rostinho</h3>
+                    <p class="service-desc">Escultura facial detalhada para criar aquele efeito "ursinho" super fofo na cabeça e bochechas do pet.</p>
+                    <div class="service-footer">
+                        <span class="service-tag especiais">Especiais</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Arredondamento%20de%20Rostinho." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Corte de unha -->
+                <div class="service-card reveal" data-category="estetica">
+                    <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    <h3 class="service-name">Corte de Unha</h3>
+                    <p class="service-desc">Corte preciso e lixamento das unhas dos pets para evitar incômodos ao andar, arranhões e problemas de postura.</p>
+                    <div class="service-footer">
+                        <span class="service-tag estetica">Estética</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Corte%20de%20Unha." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Desembolo -->
+                <div class="service-card reveal" data-category="estetica">
+                    <div class="service-icon"><i data-lucide="refresh-cw"></i></div>
+                    <h3 class="service-name">Desembolo de Nós</h3>
+                    <p class="service-desc">Remoção cuidadosa de nós na pelagem usando produtos emolientes e escovas específicas para evitar o sofrimento e estresse do pet.</p>
+                    <div class="service-footer">
+                        <span class="service-tag estetica">Estética</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Desembolo%20de%20N%C3%B3s." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Coloração de rabo -->
+                <div class="service-card reveal" data-category="estetica">
+                    <div class="service-icon"><i data-lucide="palette"></i></div>
+                    <h3 class="service-name">Coloração de Rabinho</h3>
+                    <p class="service-desc">Pintura criativa e temporária da ponta do rabo com tintas importadas 100% atóxicas e hipoalergênicas feitas especialmente para pets.</p>
+                    <div class="service-footer">
+                        <span class="service-tag estetica">Estética</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Colora%C3%A7%C3%A3o%20de%20Rabinho." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Pintura de unha -->
+                <div class="service-card reveal" data-category="estetica">
+                    <div class="service-icon"><i data-lucide="palette"></i></div>
+                    <h3 class="service-name">Pintura de Unha</h3>
+                    <p class="service-desc">Esmaltação das unhas com esmalte especial para pets, rápido de secar, atóxico e hipoalergênico.</p>
+                    <div class="service-footer">
+                        <span class="service-tag estetica">Estética</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Pintura%20de%20Unha." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Escovação de dente -->
+                <div class="service-card reveal" data-category="estetica">
+                    <div class="service-icon"><i data-lucide="activity"></i></div>
+                    <h3 class="service-name">Escovação de Dente</h3>
+                    <p class="service-desc">Higiene oral usando pasta dental e escovas especiais, ajudando a prevenir tártaro e mantendo o hálito do seu pet fresco.</p>
+                    <div class="service-footer">
+                        <span class="service-tag estetica">Estética</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Escova%C3%A7%C3%A3o%20de%20Dente." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Hidratação -->
+                <div class="service-card reveal" data-category="estetica">
+                    <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                    <h3 class="service-name">Hidratação de Pelagem</h3>
+                    <p class="service-desc">Nutrição profunda dos fios da pelagem, devolvendo maciez, brilho e elasticidade. Ideal para pelos danificados ou ressecados.</p>
+                    <div class="service-footer">
+                        <span class="service-tag estetica">Estética</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Hidrata%C3%A7%C3%A3o%20de%20Pelagem." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tosa Higiênica -->
+                <div class="service-card reveal" data-category="tosas">
+                    <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    <h3 class="service-name">Tosa Higiênica</h3>
+                    <p class="service-desc">Limpeza específica com máquina nas patinhas (coxins), região íntima e barriguinha, essencial para a higiene diária do animal.</p>
+                    <div class="service-footer">
+                        <span class="service-tag tosas">Tosas</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Tosa%20Higi%C3%AAnica." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tosa Higiênica na Tesoura -->
+                <div class="service-card reveal" data-category="tosas">
+                    <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    <h3 class="service-name">Tosa Higiênica na Tesoura</h3>
+                    <p class="service-desc">Aparagem higiênica de áreas sensíveis realizada inteiramente na tesoura. Indicada para pets sensíveis à vibração e barulho da máquina.</p>
+                    <div class="service-footer">
+                        <span class="service-tag tosas">Tosas</span>
+                        <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Tosa%20Higi%C3%AAnica%20na%20Tesoura." class="service-whatsapp" target="_blank" rel="noopener noreferrer"><i data-lucide="message-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <button id="btn-services-more" class="btn btn-outline">
+                    Ver Mais Serviços <i data-lucide="chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubinho Rabicho Section -->
+    <section class="clubinho section" id="clubinho">
+        <div class="container clubinho-grid">
+            <div class="clubinho-content reveal">
+                <span class="clubinho-badge">Assinatura Mensal</span>
+                <h3>Clubinho Rabicho</h3>
+                <p>Que tal manter seu pet sempre cheiroso, hidratado e com a saúde bucal em dia sem se preocupar em agendar a cada semana? O **Clubinho Rabicho** é o nosso pacote mensal de cuidados completos feito sob medida para facilitar a sua rotina e mimar quem você ama.</p>
+                <p>Ao assinar o Clubinho, você garante vaga fixa na nossa agenda (inclusive nas concorridas datas comemorativas) e economiza com descontos especiais!</p>
+                
+                <div class="clubinho-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i data-lucide="check"></i></div>
+                        <span class="benefit-text">4 Banhos mensais</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i data-lucide="check"></i></div>
+                        <span class="benefit-text">1 Hidratação inclusa</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i data-lucide="check"></i></div>
+                        <span class="benefit-text">1 Escovação de dente inclusa</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i data-lucide="check"></i></div>
+                        <span class="benefit-text">5% OFF em rações acima de 10kg</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i data-lucide="check"></i></div>
+                        <span class="benefit-text">Horário fixo e garantido</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i data-lucide="check"></i></div>
+                        <span class="benefit-text">Abertura antecipada de agenda</span>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/5541991290854?text=Ol%C3%A1!%20Gostaria%20de%20assinar%20o%20Clubinho%20Rabicho%20e%20garantir%20minha%20vaga." 
+                   class="btn btn-secondary" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   id="btn-clubinho-whatsapp">
+                    <i data-lucide="message-square"></i> Quero Participar do Clubinho
+                </a>
+            </div>
+            
+            <div class="reveal">
+                <div class="clubinho-card">
+                    <span class="clubinho-price-label">Mensalidades a partir de</span>
+                    <div class="clubinho-price">
+                        <span>R$</span>220<span style="font-size: 1.8rem; margin-top: 1.2rem;">,00</span>
+                    </div>
+                    <span class="clubinho-price-sub">Por mês para cuidados completos. Sem contratos longos!</span>
+                    <hr style="width: 80%; border: none; border-top: 1px solid rgba(0, 0, 0, 0.08); margin: 0.5rem 0;">
+                    <p style="font-size: 0.95rem; color: var(--clr-text-muted);">Entre em contato e monte o pacote ideal para o porte e necessidade de pelagem do seu peludinho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Search Section -->
+    <section class="products section" id="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <p style="text-align: center; max-width: 650px; margin: 0 auto var(--spacing-lg);">Trabalhamos com as melhores marcas de rações, sachês, brinquedos, areias e medicamentos do mercado. Pesquise abaixo e peça pelo WhatsApp para retirar na loja ou receber em casa!</p>
+            
+            <!-- Products Search Bar -->
+            <div class="products-search-box">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="search-input" class="search-input" placeholder="Digite para buscar: Premier, Special Dog, Simparic, Areia, Bolinha...">
+                <button id="search-clear" class="search-clear" aria-label="Limpar busca">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div class="products-categories" id="category-tabs">
+                <button class="category-tab active" data-category="all">Todos</button>
+                <button class="category-tab" data-category="racao-cao">Rações Cão</button>
+                <button class="category-tab" data-category="racao-gato">Rações Gato</button>
+                <button class="category-tab" data-category="granel">Rações a Granel</button>
+                <button class="category-tab" data-category="petisco-sache">Sachês & Petiscos</button>
+                <button class="category-tab" data-category="areia-tapete">Areias & Tapetes</button>
+                <button class="category-tab" data-category="medicamento">Medicamentos</button>
+                <button class="category-tab" data-category="acessorio">Acessórios & Brinquedos</button>
+            </div>
+            
+            <!-- Result Info -->
+            <div class="products-result-info" id="result-info">
+                Carregando produtos...
+            </div>
+            
+            <!-- Products Table/List -->
+            <div class="products-list-wrapper">
+                <div class="products-list-header">
+                    <span>Produto</span>
+                    <span style="justify-self: end;">Ação</span>
+                </div>
+                <div id="products-rows-container">
+                    <!-- Dynamic product rows filled by JS -->
+                </div>
+            </div>
+            <div id="products-more-container" style="text-align: center; margin-top: var(--spacing-md); display: none;">
+                <button id="btn-products-more" class="btn btn-outline">
+                    Ver Mais Produtos <i data-lucide="chevron-down"></i>
+                </button>
+            </div>
+            
+            <p class="products-note">
+                <i data-lucide="info" style="display: inline-block; vertical-align: middle; width: 16px; height: 16px; margin-right: 4px;"></i>
+                Não encontrou um produto específico? Temos centenas de itens em estoque física. Fale conosco no WhatsApp que consultamos para você!
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Clientes e Loja</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto var(--spacing-lg);">Veja alguns de nossos momentos, nossos queridos clientes de quatro patas, acessórios e nosso cantinho.</p>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Row 1: Fachada and Dog 1 -->
+                <div class="gallery-item reveal" data-index="0">
+                    <img src="assets/fachada/fachada.jpeg" alt="Fachada do Rabicho Pet Shop">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+                <div class="gallery-item reveal" data-index="1">
+                    <img src="assets/dogs/dog-1.jpeg" alt="Cãozinho feliz no Rabicho">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+                <div class="gallery-item reveal" data-index="2">
+                    <img src="assets/dogs/dog-2.jpeg" alt="Pet fofinho de gravata">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+                <div class="gallery-item reveal" data-index="3">
+                    <img src="assets/dogs/dog-3.jpeg" alt="Cão com pelagem impecável">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+
+                <!-- Row 2: Dogs & Acessórios -->
+                <div class="gallery-item reveal" data-index="4">
+                    <img src="assets/dogs/dog-5.jpeg" alt="Pet de banho tomado">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+                <div class="gallery-item reveal" data-index="5">
+                    <img src="assets/acessorios-racoes/acessorio-1.jpeg" alt="Brinquedos e acessórios pet em estoque">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+                <div class="gallery-item reveal" data-index="6">
+                    <img src="assets/acessorios-racoes/acessorio-2.jpeg" alt="Rações especiais na loja">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+                <div class="gallery-item reveal" data-index="7">
+                    <img src="assets/dogs/dog-6.jpeg" alt="Poodle super charmoso no Rabicho">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+
+                <!-- Row 3: Acessórios & Dogs -->
+                <div class="gallery-item reveal" data-index="8">
+                    <img src="assets/acessorios-racoes/acessorio-3.jpeg" alt="Opções de guias e coleiras coloridas">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+                <div class="gallery-item reveal" data-index="9">
+                    <img src="assets/dogs/dog-7.jpeg" alt="Golden sorridente pós tosa">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+                <div class="gallery-item reveal" data-index="10">
+                    <img src="assets/acessorios-racoes/acessorio-4.jpeg" alt="Medicamentos e antipulgas">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+                <div class="gallery-item reveal" data-index="11">
+                    <img src="assets/dogs/dog-8.jpeg" alt="Pet bem cuidado no Rabicho">
+                    <div class="gallery-overlay"><i data-lucide="eye"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-brand reveal">
+                <a href="#" class="logo-wrapper">
+                    <img src="assets/logo.jpg" alt="Rabicho Pet Shop Logo" class="logo-img" style="height: 45px;">
+                    <div class="brand-name" style="font-size: 1.3rem;">
+                        Rabicho
+                        <span class="brand-sub">Pet Shop</span>
+                    </div>
+                </a>
+                <p style="font-size: 0.95rem; margin-top: 0.5rem;">Cuidado individualizado, shampoos adaptados, profissionais experientes e muito amor para deixar seu pet limpinho, saudável e muito feliz!</p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com/rabicho.petshop" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram do Rabicho">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="reveal">
+                <h3 class="footer-title">Links Rápidos</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#" class="footer-link">Início</a></li>
+                    <li><a href="#about" class="footer-link">Nossa História</a></li>
+                    <li><a href="#services" class="footer-link">Serviços</a></li>
+                    <li><a href="#clubinho" class="footer-link">Clubinho</a></li>
+                    <li><a href="#products" class="footer-link">Produtos</a></li>
+                    <li><a href="#gallery" class="footer-link">Clientes</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="reveal">
+                <h3 class="footer-title">Como nos Encontrar</h3>
+                <div class="footer-contact-list">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                        <span class="contact-text">Rua Arnoldo Wolff Gaensly, 655<br>Atuba, Curitiba - PR</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="phone"></i></div>
+                        <span class="contact-text">WhatsApp: (41) 99129-0854</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="clock"></i></div>
+                        <span class="contact-text">
+                            <strong>Terça a Sexta:</strong> 9h às 18h<br>
+                            <strong>Sábado:</strong> 9h às 17h
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Map integration -->
+                <div class="footer-map-container">
+                    <!-- Google Maps iframe for Curitiba Atuba address -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.598687317769!2d-49.21319762461159!3d-25.38475287759082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6174a72d733%3A0x7d0a64cb2d9f4854!2sR.%20Arnoldo%20Wolff%20Gaensly%2C%20655%20-%20Atuba%2C%20Curitiba%20-%20PR%2C%2082630-190!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Rabicho Pet Shop. Todos os direitos reservados. Feito com <i data-lucide="heart" style="display: inline-block; width: 14px; height: 14px; color: var(--clr-primary); fill: var(--clr-primary); vertical-align: middle;"></i> para o seu pet.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#10094;</button>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Imagem ampliada">
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next">&#10095;</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
