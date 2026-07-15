@@ -1432,3 +1432,118 @@ ul {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Reviews Section */
+.reviews {
+    background-color: var(--clr-secondary-light);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+}
+
+.reviews-score-card {
+    background: var(--clr-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-medium);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--spacing-sm);
+}
+
+.score-stars {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.star-filled {
+    width: 24px;
+    height: 24px;
+    color: var(--clr-accent);
+    fill: var(--clr-accent);
+}
+
+.score-value {
+    font-family: var(--ff-title);
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 800;
+    color: var(--clr-text-main);
+    line-height: 1;
+}
+
+.score-count {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--clr-text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.reviews-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    justify-content: center;
+}
+
+.review-comment-card {
+    background: var(--clr-surface);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.review-comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.review-author {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-author strong {
+    font-size: 1.05rem;
+    color: var(--clr-text-main);
+}
+
+.review-author span {
+    font-size: 0.85rem;
+    color: var(--clr-text-muted);
+}
+
+.review-stars {
+    display: flex;
+    gap: 0.15rem;
+}
+
+.review-stars .star-filled {
+    width: 16px;
+    height: 16px;
+}
+
+.review-comment-text {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--clr-text-main);
+    line-height: 1.5;
+}
